@@ -1,0 +1,40 @@
+[
+    {
+      "codigo": 1,
+      "nome": "Matheus",
+      "sobrenome": "Pereira",
+      "dataNascimento" : "2001-01-30",
+      "telefone": "41987842802",
+      "endereco": "Avenida Brasil",
+      "cidade": "Curitiba",
+      "estado": "Parana",
+      "status": "Ativo",
+      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
+    },
+    {
+      "codigo": 2,
+      "nome": "Enzo",
+      "sobrenome": "Lopes",
+      "dataNascimento" : "2001-01-12",
+      "telefone": "4199999999",
+      "endereco": "Avenida Argentina",
+      "cidade": "Curitiba",
+      "estado": "Parana",
+      "status": "Ativo",
+      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
+    },
+    {
+      "codigo": 3,
+      "nome": "Joao",
+      "sobrenome": "Pereira",
+      "dataNascimento" : "2001-01-30",
+      "telefone": "41987842802",
+      "endereco": "Avenida Brasil",
+      "cidade": "Curitiba",
+      "estado": "Parana",
+      "status": "Ativo",
+      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
+    }
+
+    
+  ]
