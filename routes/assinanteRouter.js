@@ -10,7 +10,7 @@ router.get('/sobrenome/:sobrenome', assinanteController.buscarPorSobrenome);
 router.get('/cidade/:cidade', assinanteController.buscarPorCidade);
 router.get('/estado/:estado', assinanteController.buscarPorEstado);
 router.get('/status/:status', assinanteController.buscarPorStatus);
-router.put('/:codigo', assinanteController.atualizar);
+router.put('/:codigo', upload.single('imagem'), assinanteController.atualizar);
 router.delete('/:codigo', assinanteController.excluir);
 router.post('/assinantes', upload.single('imagem'), assinanteController.salvar);
 

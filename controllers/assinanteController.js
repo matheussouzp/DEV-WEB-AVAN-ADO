@@ -74,11 +74,25 @@ class AssinanteController {
     }*/
 
     async atualizar(req, res) {
-        const codigo = req.params.codigo;
-        const _id = String((await assinanteModel.findOne({ 'codigo': codigo }))._id);
-        await assinanteModel.findByIdAndUpdate(String(_id), req.body);
-        res.status(200).send();
-    }
+        try {
+          if (req.file) {
+            console.log(req.file);
+            req.body.imagem = req.file.path;
+          }
+      
+          const codigo = req.params.codigo;
+          const assinante = await assinanteModel.findOneAndUpdate({ codigo: codigo }, req.body);
+      
+          if (assinante) {
+            res.status(200).send();
+          } else {
+            res.status(404).json({ error: 'Assinante não encontrado' });
+          }
+        } catch (error) {
+          res.status(500).json({ error: 'Erro ao atualizar o perfil' });
+        }
+      }
+      
 
     async excluir(req, res) {
         const codigo = req.params.codigo;
