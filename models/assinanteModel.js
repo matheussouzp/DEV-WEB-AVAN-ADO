@@ -9,7 +9,8 @@ const assinanteSchema  = new mongoose.Schema({
     endereco: String,  
     cidade: String, 
     estado: String,
-    status: String
+    status: String,
+    imagem: Buffer
     
     });
     

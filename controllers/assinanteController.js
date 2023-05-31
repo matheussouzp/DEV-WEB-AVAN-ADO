@@ -1,16 +1,31 @@
 const assinanteModel = require('../models/assinanteModel.js');
+const multer = require('multer');
 
+const upload = multer({
+    storage: multer.memoryStorage(), // Armazenando os dados em memória
+  });
 
 class AssinanteController {
+    
     async salvar(req, res) {
-        let assinante = req.body;
-        const max = await assinanteModel.findOne({}).sort({ codigo: -1 });
-        assinante.id = max == null ? 1 : max.id + 1;
-        const resultado = await assinanteModel.create(assinante);
-        res.status(201).json(resultado);
-    }catch (error) {
-        res.status(500).json({ error: 'Erro ao criar o perfil' });
-    }
+        try {
+          let assinante = req.body;
+      
+          const max = await assinanteModel.findOne({}).sort({ codigo: -1 });
+          assinante.codigo = max == null ? 1 : max.codigo + 1;
+      
+          // Verificar se uma imagem foi enviada
+          if (req.file) {
+            console.log(req.file);
+            assinante.imagem = req.file.path;
+          }
+          
+          const resultado = await assinanteModel.create(assinante);
+          res.status(201).json(resultado);
+        } catch (error) {
+          res.status(500).json({ error: 'Erro ao criar o perfil' });
+        }
+      }
 
     async listar(req, res) {
         const resultado = await assinanteModel.find({});

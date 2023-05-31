@@ -9,8 +9,8 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "teste imagem",
-      "imagemsrc" : "teste.png"
+      "imagem": "teste imagem"
+      
     },
     {
       "codigo": 2,
@@ -22,8 +22,7 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "teste imagem",
-      "imagemsrc" : "teste.png"
+      "imagem": "teste imagem"
     },
     {
       "codigo": 3,
@@ -35,8 +34,8 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "teste imagem",
-      "imagemsrc" : "teste.png"    }
+      "imagem": "teste imagem"
+    }
 
     
   ]
