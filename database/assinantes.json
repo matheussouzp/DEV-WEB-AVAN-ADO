@@ -9,7 +9,8 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
+      "imagemPerfil": "teste imagem",
+      "imagemsrc" : "teste.png"
     },
     {
       "codigo": 2,
@@ -21,7 +22,8 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
+      "imagemPerfil": "teste imagem",
+      "imagemsrc" : "teste.png"
     },
     {
       "codigo": 3,
@@ -33,8 +35,8 @@
       "cidade": "Curitiba",
       "estado": "Parana",
       "status": "Ativo",
-      "imagemPerfil": "https://upload.wikimedia.org/wikipedia/pt/6/69/The_Avengers_Cartaz.jpg?20120429164328"
-    }
+      "imagemPerfil": "teste imagem",
+      "imagemsrc" : "teste.png"    }
 
     
   ]

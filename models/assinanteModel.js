@@ -9,12 +9,8 @@ const assinanteSchema  = new mongoose.Schema({
     endereco: String,  
     cidade: String, 
     estado: String,
-    status: String, 
-    imagemPerfil: String
-    /*imagemPerfil: {
-      data: Buffer,
-      contentType: String
-    }*/
+    status: String
+    
     });
     
 
