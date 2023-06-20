@@ -6,12 +6,20 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require("dotenv").config();
 const multer = require('multer')
+const jwt = require('jsonwebtoken');
+
 
 // var cors = require('cors');
 
 var indexRouter = require('./routes/indexRouter');
 var movieRouter = require('./routes/movieRouter');
 var assinanteRouter = require('./routes/assinanteRouter');
+var clienteRouter = require('./routes/clienteRouter');
+var categoriaRouter = require('./routes/categoriaRouter');
+var produtoRouter = require('./routes/produtoRouter');
+var pedidoRouter = require('./routes/pedidoRouter');
+
+
 //var assinantefotoRouter = require('./routes/assinantefotoRouter');
 
 
@@ -27,6 +35,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/movie', movieRouter);
 app.use('/assinante', assinanteRouter);
+app.use('/cliente', clienteRouter);
+app.use('/categoria', categoriaRouter);
+app.use('/produto', produtoRouter);
+app.use('/pedido', pedidoRouter);
+
+
 //app.use('/assinantefoto', assinantefotoRouter);
 
 
